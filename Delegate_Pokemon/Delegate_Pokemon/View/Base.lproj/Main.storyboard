@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hxI-Dt-egP">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--당신의 포켓몬은?-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SelectionViewController" id="BYZ-38-t0r" customClass="SelectionViewController" customModule="Delegate_Pokemon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drOh" translatesAutoresizingMaskIntoConstraints="NO" id="B3C-GN-AEH">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="CUo-bM-Gm7"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Qg1-Y7-7fB">
+                                <rect key="frame" x="11" y="265" width="370" height="144.33333333333337"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w3F-6O-Azy">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="144.33333333333334"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="이상해씨" translatesAutoresizingMaskIntoConstraints="NO" id="5PA-sP-DXf">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="4pU-sr-cQJ"/>
+                                                    <constraint firstAttribute="width" constant="100" id="cgu-Ce-bLn"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDY-Gl-iT6">
+                                                <rect key="frame" x="23.333333333333339" y="110" width="53.666666666666657" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="선택"/>
+                                                <connections>
+                                                    <action selector="selectPokemon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oW1-nX-p8r"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ccl-Ac-1rh">
+                                        <rect key="frame" x="135" y="0.0" width="100" height="144.33333333333334"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="꼬부기" translatesAutoresizingMaskIntoConstraints="NO" id="Vlu-DK-sUe">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="5fR-Mt-thc"/>
+                                                    <constraint firstAttribute="height" constant="100" id="Ewr-fH-FNU"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALJ-Oe-MZs">
+                                                <rect key="frame" x="23.333333333333339" y="110" width="53.666666666666657" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="선택"/>
+                                                <connections>
+                                                    <action selector="selectPokemon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SLc-3U-Wby"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KY7-ON-O0d">
+                                        <rect key="frame" x="270" y="0.0" width="100" height="144.33333333333334"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="파이리" translatesAutoresizingMaskIntoConstraints="NO" id="NnZ-av-7dD">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="l5k-ck-qYq"/>
+                                                    <constraint firstAttribute="height" constant="100" id="vBY-MC-NTU"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxe-F1-DF8">
+                                                <rect key="frame" x="23.333333333333311" y="110" width="53.666666666666657" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="선택"/>
+                                                <connections>
+                                                    <action selector="selectPokemon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sZs-ts-bKN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="너로 정했다!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRH-If-OKa">
+                                <rect key="frame" x="16" y="424.33333333333331" width="361" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="CEn-95-5ON"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PRH-If-OKa" firstAttribute="top" secondItem="Qg1-Y7-7fB" secondAttribute="bottom" constant="15" id="Ckf-T4-MiC"/>
+                            <constraint firstItem="PRH-If-OKa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="HCV-w7-Szn"/>
+                            <constraint firstItem="Qg1-Y7-7fB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="11" id="M6R-rP-wLf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B3C-GN-AEH" secondAttribute="trailing" id="U9I-E0-BEZ"/>
+                            <constraint firstItem="B3C-GN-AEH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WwL-tA-QPF"/>
+                            <constraint firstItem="B3C-GN-AEH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="X7M-gQ-VAp"/>
+                            <constraint firstItem="Qg1-Y7-7fB" firstAttribute="top" secondItem="B3C-GN-AEH" secondAttribute="bottom" constant="15" id="XAr-Xh-lJf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PRH-If-OKa" secondAttribute="trailing" constant="16" id="k1Z-UC-HLs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qg1-Y7-7fB" secondAttribute="trailing" constant="12" id="l8X-7v-yQf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="당신의 포켓몬은?" id="4Rb-ev-pHW"/>
+                    <size key="freeformSize" width="393" height="852"/>
+                    <connections>
+                        <outlet property="bulbasaurImageView" destination="5PA-sP-DXf" id="W4D-it-7lV"/>
+                        <outlet property="charmanderImageView" destination="NnZ-av-7dD" id="7RG-eb-LYq"/>
+                        <outlet property="squirtleImageView" destination="Vlu-DK-sUe" id="ux9-v9-MQQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4047" y="25"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="Fsp-MI-CdR">
+            <objects>
+                <viewController storyboardIdentifier="ResultViewController" id="THW-Ep-cKQ" customClass="ResultViewController" customModule="Delegate_Pokemon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="98j-82-ZFp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7Y-21-hnA" userLabel="RedView">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="426"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7Q-7d-TrD" userLabel="WhiteView">
+                                <rect key="frame" x="0.0" y="426" width="393" height="426"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nw1-Zn-eCM">
+                                        <rect key="frame" x="10" y="271" width="373" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="AXB-9f-aDV"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="오박사의 집에서 나가기">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="getOutFromDrOhHouse:" destination="THW-Ep-cKQ" eventType="touchUpInside" id="2Uf-Mn-PGo"/>
+                                        </connections>
+                                    </button>
+                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="re8-U4-tf6">
+                                        <rect key="frame" x="10" y="179.33333333333337" width="373" height="55.666666666666657"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEq-K0-vrk" userLabel="이름">
+                                                <rect key="frame" x="166" y="0.0" width="41.333333333333343" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gO-Hm-1bg" userLabel="타입">
+                                                <rect key="frame" x="166" y="35.333333333333258" width="41.333333333333343" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIc-3X-Uoq">
+                                        <rect key="frame" x="12" y="334" width="373" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="LCq-Qb-ux3"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="포켓몬 고르기">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="3Vz-kY-Zod"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Nw1-Zn-eCM" secondAttribute="trailing" constant="10" id="Bmv-mp-U2S"/>
+                                    <constraint firstItem="re8-U4-tf6" firstAttribute="leading" secondItem="v7Q-7d-TrD" secondAttribute="leading" constant="10" id="Pa5-e3-5Qu"/>
+                                    <constraint firstAttribute="trailing" secondItem="uIc-3X-Uoq" secondAttribute="trailing" constant="8" id="RIB-jN-fjq"/>
+                                    <constraint firstItem="uIc-3X-Uoq" firstAttribute="top" secondItem="Nw1-Zn-eCM" secondAttribute="bottom" constant="13" id="dlS-fc-BwT"/>
+                                    <constraint firstAttribute="trailing" secondItem="re8-U4-tf6" secondAttribute="trailing" constant="10" id="edC-Os-5r4"/>
+                                    <constraint firstItem="Nw1-Zn-eCM" firstAttribute="leading" secondItem="v7Q-7d-TrD" secondAttribute="leading" constant="10" id="g3a-Wb-qEJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="uIc-3X-Uoq" secondAttribute="bottom" constant="42" id="gbI-E4-AYW"/>
+                                    <constraint firstItem="uIc-3X-Uoq" firstAttribute="leading" secondItem="v7Q-7d-TrD" secondAttribute="leading" constant="12" id="gk3-vD-Dk5"/>
+                                    <constraint firstItem="Nw1-Zn-eCM" firstAttribute="top" secondItem="re8-U4-tf6" secondAttribute="bottom" constant="36" id="iaP-F8-4Kk"/>
+                                    <constraint firstItem="re8-U4-tf6" firstAttribute="top" secondItem="v7Q-7d-TrD" secondAttribute="top" constant="179.33333333333337" id="wGT-62-8Z0"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cf7-zD-wLT">
+                                <rect key="frame" x="96.666666666666686" y="320" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="8WU-kV-Ctw"/>
+                                    <constraint firstAttribute="height" constant="200" id="vDT-EV-Z16"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mqO-U7-hFT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="t7Y-21-hnA" firstAttribute="height" secondItem="98j-82-ZFp" secondAttribute="height" multiplier="0.5" id="0eX-ZX-Gbb"/>
+                            <constraint firstItem="v7Q-7d-TrD" firstAttribute="height" secondItem="98j-82-ZFp" secondAttribute="height" multiplier="0.5" id="9R8-Hz-fah"/>
+                            <constraint firstAttribute="bottom" secondItem="v7Q-7d-TrD" secondAttribute="bottom" id="DpW-po-CZo"/>
+                            <constraint firstAttribute="bottom" secondItem="t7Y-21-hnA" secondAttribute="bottom" constant="426" id="Fbz-F2-Cqn"/>
+                            <constraint firstItem="v7Q-7d-TrD" firstAttribute="leading" secondItem="mqO-U7-hFT" secondAttribute="leading" id="JS5-cc-Um1"/>
+                            <constraint firstItem="v7Q-7d-TrD" firstAttribute="top" secondItem="t7Y-21-hnA" secondAttribute="bottom" id="M6a-Qo-P4Y"/>
+                            <constraint firstItem="mqO-U7-hFT" firstAttribute="trailing" secondItem="v7Q-7d-TrD" secondAttribute="trailing" id="QMU-BD-aj9"/>
+                            <constraint firstItem="mqO-U7-hFT" firstAttribute="trailing" secondItem="t7Y-21-hnA" secondAttribute="trailing" id="Zf6-iu-BrQ"/>
+                            <constraint firstItem="t7Y-21-hnA" firstAttribute="top" secondItem="98j-82-ZFp" secondAttribute="top" id="aKH-Lg-Gu2"/>
+                            <constraint firstItem="t7Y-21-hnA" firstAttribute="leading" secondItem="mqO-U7-hFT" secondAttribute="leading" id="aw4-ij-Wli"/>
+                            <constraint firstItem="Cf7-zD-wLT" firstAttribute="centerX" secondItem="mqO-U7-hFT" secondAttribute="centerX" id="dRO-Y5-vCv"/>
+                            <constraint firstItem="Cf7-zD-wLT" firstAttribute="top" secondItem="98j-82-ZFp" secondAttribute="top" constant="320" id="zEP-6l-q6G"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="393" height="852"/>
+                    <connections>
+                        <outlet property="pokemonImageView" destination="Cf7-zD-wLT" id="1iU-f2-4jg"/>
+                        <outlet property="pokemonInfoStackView" destination="re8-U4-tf6" id="xuM-yD-Tub"/>
+                        <outlet property="pokemonNameLabel" destination="GEq-K0-vrk" id="U94-rb-s7L"/>
+                        <outlet property="pokemonTypeLabel" destination="3gO-Hm-1bg" id="any-Bp-Dnd"/>
+                        <outlet property="redView" destination="t7Y-21-hnA" id="xNr-Es-K7e"/>
+                        <outlet property="whiteView" destination="v7Q-7d-TrD" id="H1M-Oc-FWH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rXu-j2-egO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3074" y="25"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="RAJ-dX-v1U">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="hxI-Dt-egP" customClass="MainViewController" customModule="Delegate_Pokemon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A15-hY-Tsz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7bm-dC-8iA">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="128"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Ydl-Xx-Lnc"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drOhHouse" translatesAutoresizingMaskIntoConstraints="NO" id="h3G-7r-328">
+                                <rect key="frame" x="0.0" y="59" width="393" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="375" id="Sjh-ui-f8o"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrt-PN-qcB">
+                                <rect key="frame" x="16" y="594.66666666666663" width="361" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="2t8-Ix-TDe"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="오박사의 집 들어가기">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="enterTheDrOhHouse:" destination="hxI-Dt-egP" eventType="touchUpInside" id="Y9G-JY-MVa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8yw-Iq-BfQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vrt-PN-qcB" firstAttribute="leading" secondItem="8yw-Iq-BfQ" secondAttribute="leading" constant="16" id="CgC-nT-wj2"/>
+                            <constraint firstItem="7bm-dC-8iA" firstAttribute="top" secondItem="A15-hY-Tsz" secondAttribute="top" id="LZn-Iw-eXR"/>
+                            <constraint firstItem="7bm-dC-8iA" firstAttribute="leading" secondItem="8yw-Iq-BfQ" secondAttribute="leading" id="Lmg-G0-lEJ"/>
+                            <constraint firstItem="h3G-7r-328" firstAttribute="leading" secondItem="8yw-Iq-BfQ" secondAttribute="leading" id="MY1-ZW-QVI"/>
+                            <constraint firstItem="8yw-Iq-BfQ" firstAttribute="bottom" secondItem="Vrt-PN-qcB" secondAttribute="bottom" constant="158.33333333333337" id="NxL-6Z-Ilo"/>
+                            <constraint firstItem="8yw-Iq-BfQ" firstAttribute="trailing" secondItem="7bm-dC-8iA" secondAttribute="trailing" id="Zh7-Ic-bFQ"/>
+                            <constraint firstItem="8yw-Iq-BfQ" firstAttribute="trailing" secondItem="h3G-7r-328" secondAttribute="trailing" id="tyW-Jb-psg"/>
+                            <constraint firstItem="h3G-7r-328" firstAttribute="top" secondItem="8yw-Iq-BfQ" secondAttribute="top" id="v4C-nf-Nnv"/>
+                            <constraint firstItem="8yw-Iq-BfQ" firstAttribute="trailing" secondItem="Vrt-PN-qcB" secondAttribute="trailing" constant="16" id="zZ6-gd-YNV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qsy-eC-3mt"/>
+                    <size key="freeformSize" width="393" height="852"/>
+                    <connections>
+                        <outlet property="drOhHouseEnterButton" destination="Vrt-PN-qcB" id="Sw5-Ki-Pxz"/>
+                        <outlet property="drOhHouseImageView" destination="h3G-7r-328" id="WAk-C8-E3c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bcq-F3-uZJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2086" y="25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="drOh" width="307" height="194"/>
+        <image name="drOhHouse" width="238" height="212"/>
+        <image name="꼬부기" width="800" height="647"/>
+        <image name="이상해씨" width="800" height="760"/>
+        <image name="파이리" width="236" height="213"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
